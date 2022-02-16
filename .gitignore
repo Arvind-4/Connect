@@ -1,0 +1,14 @@
+# python 
+
+Include/
+Lib/
+Scripts/
+__pycache__/
+
+# js
+
+node_modules/
+
+# etc
+
+.env
