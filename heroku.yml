@@ -1,5 +1,5 @@
 build:
   docker:
     web: ./web/Dockerfile
-
-    
+run:
+  web: /opt/venv/bin/daphne backend.asgi:application --bind "0.0.0.0" --port ${PORT}
