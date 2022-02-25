@@ -8,3 +8,8 @@ __pycache__/
 node_modules/
 
 .env
+
+bin/
+lib/
+lib64
+share/

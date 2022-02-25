@@ -12,3 +12,8 @@ node_modules/
 # etc
 
 .env
+
+bin/
+lib/
+lib64
+share/
