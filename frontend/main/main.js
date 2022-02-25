@@ -39,9 +39,7 @@ btnJoin.onclick = (e) => {
 
   webSocket = new WebSocket(endPoint);
   webSocket.onopen = function (e) {
-    sendSignal("new-peer", {
-      local_screen_sharing: false,
-    });
+    sendSignal("new-peer");
   };
 
   webSocket.onmessage = webSocketOnMessage;

@@ -1,2 +1,4 @@
 var rootDiv = document.querySelector("#root")
-export const is_authenticated = rootDiv.getAttribute("data-is_authenticated")
+const is_auth = rootDiv.getAttribute("data-is_authenticated")
+
+export const is_authenticated = String(is_auth.toLowerCase())

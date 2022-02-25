@@ -28,20 +28,16 @@ function Newsletter() {
                 </g>
               </svg>
             </div>
-
             <div className="relative flex flex-col lg:flex-row justify-between items-center">
               <div className="text-center lg:text-left lg:max-w-xl">
                 <h3 className="h3 text-white mb-2">Powering your business</h3>
-                <p className="text-gray-300 text-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente.</p>
-                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="#0">Subscribe</a>
+                <p className="text-gray-300 text-lg mb-6">For more Information</p>
+                  <div className="flex flex-row sm:flex-row  max-w-xs mx-auto sm:max-w-md lg:mx-0">
+                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="/contact-us/">Contact Us</a>
                   </div>
               </div>
-
             </div>
-
           </div>
-
         </div>
       </div>
     </section>

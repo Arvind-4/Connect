@@ -32,9 +32,10 @@ function Features() {
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3">Powerful suite of tools</h3>
-                <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+                <p className="text-xl text-gray-600">
+                  We provide a Suite of Tools which help Rapid application development.
+                </p>
               </div>
-              {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
@@ -83,11 +84,8 @@ function Features() {
                 </a>
               </div>
             </div>
-
-            {/* Tabs items */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="zoom-y-out" ref={tabs}>
               <div className="relative flex flex-col text-center lg:text-right">
-                {/* Item 1 */}
                 <Transition
                   show={tab === 1}
                   appear={true}
@@ -104,7 +102,6 @@ function Features() {
                     <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement1} width="500" height="44" alt="Element" style={{ top: '30%' }} />
                   </div>
                 </Transition>
-                {/* Item 2 */}
                 <Transition
                   show={tab === 2}
                   appear={true}
@@ -121,7 +118,6 @@ function Features() {
                     <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement2} width="500" height="44" alt="Element" style={{ top: '30%' }} />
                   </div>
                 </Transition>
-                {/* Item 3 */}
                 <Transition
                   show={tab === 3}
                   appear={true}
@@ -140,9 +136,7 @@ function Features() {
                 </Transition>
               </div>
             </div >
-
           </div >
-
         </div >
       </div >
     </section >
