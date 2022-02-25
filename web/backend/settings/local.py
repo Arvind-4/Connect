@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = 'django-insecure-e8yccf5!q5l)@upx+)tyz*=-l_1*errtn7qfm(--bj)gal4yp_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -48,7 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -132,10 +132,10 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static-dev',
 ]
 
-STATIC_ROOT = './static'
+STATIC_ROOT = BASE_DIR / 'static'
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "mediafiles"
+MEDIA_ROOT = BASE_DIR / "media"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -150,3 +150,9 @@ CHANNEL_LAYERS = {
 LOGIN_URL = 'sign-in'
 
 AUTH_USER_MODEL = 'accounts.Account'
+
+INTERNAL_IPS = (
+    '127.0.0.1',
+    '192.168.1.23',
+    'localhost',
+)

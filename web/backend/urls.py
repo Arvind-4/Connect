@@ -26,14 +26,22 @@ from django.views.static import serve
 from apps.video.views import (
     meet_view,
     new_meet_view,
-    home_page
+)
+
+from apps.pages.views import (
+    HomePageView,
+    ContactUsView,
+    AboutUsView,
 )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_page),
     path('new/', new_meet_view),
     path('accounts/', include('apps.accounts.urls')),
     path('<uuid:room_id>/', meet_view),
+
+    path('', HomePageView.as_view(), name='home'),
+    path('contact-us/', ContactUsView.as_view(), name='contact-us'),
+    path('about-us/', AboutUsView.as_view(), name='about-us'),
     # re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
 ]

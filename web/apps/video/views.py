@@ -6,9 +6,6 @@ from django.contrib.auth.decorators import login_required
 
 from .utils import create_unique_uuid
 
-def home_page(request):
-    return render(request, 'pages/home-page.html', context={})
-
 @login_required
 def new_meet_view(request):
     room_id = create_unique_uuid()
