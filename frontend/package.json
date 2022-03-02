@@ -14,7 +14,7 @@
     "build:css": "NODE_ENV=production postcss tailwind/tailwind.css -o ../web/static-dev/css/style.min.css",
     "build:react": "rm -rf ../web/static-dev/js/index.min.js && vite build --config viteConfig/react.config.js && cd ../web/static-dev/js && rm -rf index.html && mv assets/*.js ./ && mv assets/*.css ../css/index.min.css && rm -rf assets && mv index.*.js ./index.min.js",
     "build:js": "rm -rf ../web/static-dev/js/script.min.js && vite build --config viteConfig/js.config.js && cd ../web/static-dev/js/ && rm -rf index.html && mv assets/*.js script.min.js && rm -rf assets",
-    "production": "yarn build:css && yarn build:js && yarn build:react"
+    "production": "rm -rf ../web/static-dev/js/ ../web/static-dev/css/ && yarn build:css && yarn build:js && yarn build:react"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
