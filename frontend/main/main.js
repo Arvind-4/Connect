@@ -39,7 +39,7 @@ btnJoin.onclick = (e) => {
 
   webSocket = new WebSocket(endPoint);
   webSocket.onopen = function (e) {
-    sendSignal("new-peer");
+    sendSignal("new-peer", {});
   };
 
   webSocket.onmessage = webSocketOnMessage;
