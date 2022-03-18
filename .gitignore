@@ -5,6 +5,8 @@ Lib/
 Scripts/
 __pycache__/
 
+web/static/
+
 # js
 
 node_modules/
