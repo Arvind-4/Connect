@@ -15,8 +15,8 @@ services:
       - djangonetwork
   web:
     build:
-      context: .
-      dockerfile: web/Dockerfile
+      context: ./web
+      dockerfile: Dockerfile
     container_name: django
     # depends_on:
     #   - db
